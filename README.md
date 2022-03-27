@@ -25,4 +25,12 @@ https://user-images.githubusercontent.com/37156032/160282244-42f6bd8c-bfc8-47af-
     <li>Display minimum and maximum FPS recorded during inference</li>
 </ol> 
 
+## :dizzy: How to use?
+<ol>
+    <li>Clone this repo</li>
+    <li>Install all the dependencies</li>
+    <li>Run -> streamlit run app.py</li>
+</ol>
 
+## :heart: Extras
+Do checkout the Medium article and give this repo a :star:
