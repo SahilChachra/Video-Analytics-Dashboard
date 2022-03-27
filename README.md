@@ -3,10 +3,9 @@
 ## :innocent: Motivation
 As AI engineers, we love data and we love to see graphs and numbers! So why not project the inference data on some platform to understand the inference better? When a model is deployed on the edge for some kind of monitoring, it takes up rigorous amount of frontend and backend developement apart from deep learning efforts — from getting the live data to displaying the correct output. So, I wanted to replicate a small scale video analytics tool and understand what all feature would be useful for such a tool and what could be the limitations?
 
-## :framed_picture: Some Screenshots 
+## :framed_picture: Demo
 
-![]
-![]
+https://www.youtube.com/watch?v=7RbFR11bTsY
 
 ## :key: Features
 
@@ -24,8 +23,6 @@ As AI engineers, we love data and we love to see graphs and numbers! So why not 
     <li>Display System stats - Ram, CPU and GPU usage</li>
     <li>Display poor performing class</li>
     <li>Display minimum and maximum FPS recorded during inference</li>
-</ol>
-
-## :eyes: 
+</ol> 
 
 
