@@ -5,7 +5,7 @@ As AI engineers, we love data and we love to see graphs and numbers! So why not 
 
 ## :framed_picture: Demo
 
-
+https://user-images.githubusercontent.com/37156032/160282244-42f6bd8c-bfc8-47af-8973-d3d199140e44.mp4
 
 ## :key: Features
 
