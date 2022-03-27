@@ -139,18 +139,9 @@ def detect(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
         dataset = LoadImages(source, img_size=imgsz, stride=stride, auto=pt)
         bs = 1  # batch_size
     vid_path, vid_writer = [None] * bs, [None] * bs
-
-    ## Get names and colors
-    #names = model.module.names if hasattr(model, 'module') else model.names
-    
     
     # Run inference
-    '''if device.type != 'cpu':
-        model(torch.zeros(1, 3, imgsz, imgsz).to(device).type_as(next(model.parameters())))  # run once'''
     t0 = time.time()
-    
-    
-    ##for frame_idx enumerate
     
     dt, seen = [0.0, 0.0, 0.0], 0
     prev_time = time.time()
@@ -184,16 +175,11 @@ def detect(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
         pred = non_max_suppression(pred, conf_thres, iou_thres, classes, agnostic_nms, max_det=max_det)
         dt[2] += time_sync() - t3
 
-        # Second-stage classifier (optional)
-        # pred = utils.general.apply_classifier(pred, classifier_model, im, im0s)
-
         # Process predictions
         class_count = 0
-        # mapped_= {'person':0, "car":0, "motorcycle":0, 'truck':0, "traffic light":0}
-        # mapped_ = dict()
+        
         drift_dict = dict()
         
-        # print("Line 168, pred :",pred)
         for i, det in enumerate(pred):  # per image
             seen += 1
             if webcam:  # batch_size >= 1
@@ -249,22 +235,12 @@ def detect(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
                 outputs = deepsort.update(xywhs, confss, im0)
                 
                 # draw boxes for visualization
-                # print("Outputs :", len(outputs))
-                
                 if len(outputs) > 0:
                     # print("Outputs :", outputs)
                     bbox_xyxy = outputs[:, :4]
                     identities = outputs[:, -1]
                     draw_boxes(im0, bbox_xyxy, identities)
 
-                '''if len(outputs) > 0:  
-                    classes = outputs[:, 4]
-                    # print("Classes :", classes)
-                    unique, counts = np.unique(classes, return_counts=True)
-                    #map_name = 
-                    class_count = dict(zip([selected_names[i] for i in unique], counts))
-                    #print("Class count :", class_count)'''
-                    
                 # Write MOT compliant results to file
                 if save_txt and len(outputs) != 0:
                     for j, output in enumerate(outputs):
@@ -295,9 +271,6 @@ def detect(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
             else:
                 deepsort.increment_ages()
                 
-            # Print time (inference + NMS)
-            # print(f'{s}Done. ({t2 - t1:.3f}s)')
-
             # Stream results
             if view_img:
                 cv2.imshow(str(p), im0)
@@ -337,19 +310,6 @@ def detect(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
         kpi2_text.write(mapped_)
         kpi3_text.write(global_graph_dict)
 
-        '''if global_graph_dict:
-            names_, cnts_ = zip(*global_graph_dict.items())
-            fig, ax = plt.subplots(1, 1, figsize=(3, 2))
-            ax.bar(names_, cnts_, color=['pink', 'red', 'green', 'blue', 'cyan', 'orange', 'yellow'])
-            # sns.barplot(x=names_, y=cnts_, axes=ax)
-            # ax.title.set_text('Total objects', fontsize=8)
-            ax.set_xlabel('Class names', fontsize=5)
-            ax.set_ylabel('Counts', fontsize=5)
-            ax.set_title('Total detections', fontsize=5)
-            ax.tick_params(axis='both', which='major', labelsize=5)
-            plt.xticks(rotation = 45)
-            stgraph.pyplot(fig)'''
-        
         inf_ov_1_text.write(test_drift)
         inf_ov_2_text.write(poor_perf_frame_counter)
 
