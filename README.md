@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/37156032/160282244-42f6bd8c-bfc8-47af-
 
 ## :key: Features
 
-<h3>For detailed insights do check out my <a href="https://sahilchachra.medium.com/video-analytics-dashboard-for-yolov5-and-deepsort-c5994461cb44">Medium Blog</a></h3>
+<h3>For detailed insights, do check out my <a href="https://sahilchachra.medium.com/video-analytics-dashboard-for-yolov5-and-deepsort-c5994461cb44">Medium Blog</a></h3>
 
 <ol>
     <li>Choose input source - Local, RTSP or Webcam</li>
