@@ -5,7 +5,7 @@ As AI engineers, we love data and we love to see graphs and numbers! So why not 
 
 ## :framed_picture: Demo
 
-https://www.youtube.com/watch?v=7RbFR11bTsY
+<iframe src="https://www.youtube.com/watch?v=7RbFR11bTsY"></iframe>
 
 ## :key: Features
 
