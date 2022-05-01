@@ -61,7 +61,7 @@ def main():
                 st.markdown("**Total Detected objects**")
                 kpi3_text = st.markdown("0")
             
-            # Updating Jetson stats
+            # Updating System stats
             
             with js1:
                 st.markdown("**Memory usage**")
@@ -126,7 +126,7 @@ def main():
                 st.markdown("**Total Detected objects**")
                 kpi3_text = st.markdown("0")
             
-            # Updating Jetson stats
+            # Updating System stats
             
             with js1:
                 st.markdown("**Memory usage**")
@@ -190,7 +190,7 @@ def main():
                 st.markdown("**Total Detected objects**")
                 kpi3_text = st.markdown("0")
             
-            # Updating Jetson stats
+            # Updating System stats
             
             with js1:
                 st.markdown("**Memory usage**")
