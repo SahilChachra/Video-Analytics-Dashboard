@@ -42,5 +42,5 @@ https://user-images.githubusercontent.com/37156032/160282244-42f6bd8c-bfc8-47af-
 ## :heart: Extras
 Do checkout the Medium article and give this repo a :star:
 
-## :note: Note
+## Note
 The input video should be in same folder where app.py is. If you want to deploy the app in cloud and use it as a webapp then - download the user uploaded video to temporary folder and pass the path and video name to the respective function in app.py . This is Streamlit bug. Check <a href="https://stackoverflow.com/questions/65612750/how-can-i-specify-the-exact-folder-in-streamlit-for-the-uploaded-file-to-be-save">Stackoverflow</a>.
