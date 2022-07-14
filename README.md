@@ -29,6 +29,7 @@ https://user-images.githubusercontent.com/37156032/160282244-42f6bd8c-bfc8-47af-
 <ol>
     <li>Clone this repo</li>
     <li>Install all the dependencies</li>
+    <li>Download deepsort <a href="https://drive.google.com/file/d/1TmZRcYQMemPLGjY62LBXwX8HnI_zxy2W/view?usp=sharing">checkpoint</a> file and paste it in deep_sort_pytorch/deep_sort/deep/checkpoint</li>
     <li>Run -> streamlit run app.py</li>
 </ol>
 
