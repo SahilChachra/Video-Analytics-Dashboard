@@ -33,5 +33,11 @@ https://user-images.githubusercontent.com/37156032/160282244-42f6bd8c-bfc8-47af-
     <li>Run -> streamlit run app.py</li>
 </ol>
 
+## :dizzy: Recent changelog?
+<ol>
+    <li>Updated yolov5s weight file name in detect() in app.py</li>
+    <li>Added drive link to download DeepSort checkpoint file (45Mb).</li>
+</ol>
+
 ## :heart: Extras
 Do checkout the Medium article and give this repo a :star:
