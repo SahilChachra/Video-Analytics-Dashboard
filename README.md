@@ -39,6 +39,11 @@ https://user-images.githubusercontent.com/37156032/160282244-42f6bd8c-bfc8-47af-
     <li>Added drive link to download DeepSort checkpoint file (45Mb).</li>
 </ol>
 
+## :exploding_head: FAQs
+<ol>
+    <li><a href="https://github.com/SahilChachra/Video-Analytics-Dashboard/issues/5">How use custom Yolov5 weight or DeepSort checkpoint file?</li></a>
+</ol>
+
 ## :heart: Extras
 Do checkout the Medium article and give this repo a :star:
 
