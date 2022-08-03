@@ -72,7 +72,7 @@ def detect(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
         project=ROOT / 'runs/detect',  # save results to project/name
         name='exp',  # save results to project/name
         exist_ok=False,  # existing project/name ok, do not increment
-        line_thickness=3,  # bounding box thickness (pixels)
+        line_thickness=1,  # bounding box thickness (pixels)
         hide_labels=False,  # hide labels
         hide_conf=False,  # hide confidences
         half=False,  # use FP16 half-precision inference
@@ -302,7 +302,11 @@ def detect(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
         
         js1_text.write(str(psutil.virtual_memory()[2])+"%")
         js2_text.write(str(psutil.cpu_percent())+'%')
-        js3_text.write(str(get_gpu_memory())+' MB')
+        try:
+            js3_text.write(str(get_gpu_memory())+' MB')
+        except:
+            js3_text.write(str('NA'))
+
 
         kpi1_text.write(str(fps_)+' FPS')
         if fps_ < fps_drop_warn_thresh:
