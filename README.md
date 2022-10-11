@@ -43,7 +43,7 @@ https://user-images.githubusercontent.com/37156032/160282244-42f6bd8c-bfc8-47af-
 <ol>
     <li><a href="https://github.com/SahilChachra/Video-Analytics-Dashboard/issues/5">How to use custom Yolov5 weight or DeepSort checkpoint file?</a></li>
     <li><a href="https://github.com/SahilChachra/Video-Analytics-Dashboard/issues/3">Unable to use webcam</a></li>
-    <li><a href="https://github.com/ultralytics/yolov5/issues/6948">AttributeError: 'Upsample' object has no attribute 'recompute_scale_factor'</a><li>
+    <li><a href="https://github.com/ultralytics/yolov5/issues/6948">AttributeError: 'Upsample' object has no attribute 'recompute_scale_factor'</a></li>
 </ol>
 
 ## :heart: Extras
