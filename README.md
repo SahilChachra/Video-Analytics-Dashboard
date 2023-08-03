@@ -30,11 +30,12 @@ https://user-images.githubusercontent.com/37156032/160282244-42f6bd8c-bfc8-47af-
     <li>Clone this repo</li>
     <li>Install all the dependencies</li>
     <li>Download deepsort <a href="https://drive.google.com/drive/folders/1xhG0kRH1EX5B9_Iz8gQJb7UNnn_riXi6">checkpoint</a> file and paste it in deep_sort_pytorch/deep_sort/deep/checkpoint</li>
-    <li>Run -> streamlit run app.py</li>
+    <li>Run -> 'streamlit run app.py' or 'python -m streamlit run app.py' in Windows.</li>
 </ol>
 
 ## :star: Recent changelog
 <ol>
+    <li>Fixed the errors related to <a href="https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations">Numpy 1.20.0 alias deprecations.</a></li>
     <li>Updated yolov5s weight file name in detect() in app.py</li>
     <li>Added drive link to download DeepSort checkpoint file (45Mb).</li>
 </ol>
